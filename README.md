@@ -29,7 +29,7 @@ A comprehensive skill for reviewing TypeScript backend applications with a focus
 - Advanced type patterns and generics
 - Runtime validation with Zod/Joi
 - Type guards and narrowing
-- Avoiding \`any\` type
+- Avoiding `any` type
 - Proper error handling types
 - **NEW**: Anti-pattern detection (10 common mistakes)
 - **NEW**: Modern patterns (8 advanced patterns)
@@ -60,7 +60,7 @@ A comprehensive skill for reviewing TypeScript backend applications with a focus
 
 ## Structure
 
-\`\`\`
+```
 typescript-backend-expert/
 ├── SKILL.md                           # Main skill instructions
 ├── README.md                          # This file
@@ -76,7 +76,7 @@ typescript-backend-expert/
 └── examples/                          # Code examples
     ├── security-examples.md           # Good vs bad security patterns (10 patterns)
     └── performance-examples.md        # Good vs bad performance patterns (11 patterns)
-\`\`\`
+```
 
 
 ## Usage with Claude Code
@@ -86,13 +86,13 @@ This skill is designed to work with [Claude Code](https://claude.com/claude-code
 ### Installation
 
 1. **Place the skill in your Claude Code skills directory**:
-   \`\`\`bash
+   ```bash
    # Navigate to your Claude Code skills directory
    cd ~/.claude-code/skills/
 
    # Clone or copy this repository
    git clone https://github.com/robbanp/typescript-backend-expert.git
-   \`\`\`
+   ```
 
 2. **The skill will be automatically available** when you use Claude Code in your TypeScript backend projects.
 
@@ -111,25 +111,25 @@ Claude Code automatically loads skills from your skills directory and activates 
 Once installed, you can interact with Claude Code naturally:
 
 **Code Review Request**:
-\`\`\`
+```
 "Review this Express route handler for security issues"
 "Check this Fastify plugin for performance problems"
 "Review my authentication middleware"
-\`\`\`
+```
 
 **Best Practices**:
-\`\`\`
+```
 "What's the best way to handle errors in Express?"
 "Show me how to implement rate limiting in Fastify"
 "How should I structure my TypeScript backend project?"
-\`\`\`
+```
 
 **Specific Analysis**:
-\`\`\`
+```
 "Check this code for OWASP Top 10 vulnerabilities"
 "Review this for GDPR compliance"
 "Analyze this database query for N+1 problems"
-\`\`\`
+```
 
 ### What You Get
 
@@ -178,7 +178,7 @@ Claude Code will categorize findings into four severity levels:
 
 ### Type Safety Checklist
 - [ ] Strict TypeScript configuration
-- [ ] No implicit \`any\`
+- [ ] No implicit `any`
 - [ ] Proper type annotations
 - [ ] Runtime validation (Zod, Joi)
 - [ ] Type guards and narrowing
@@ -256,14 +256,14 @@ Claude Code will categorize findings into four severity levels:
 11. Database index usage
 
 ### TypeScript Anti-Patterns (10 Common Mistakes)
-1. Overusing \`any\` type
+1. Overusing `any` type
 2. Overusing classes unnecessarily
-3. Using \`Function\` type
+3. Using `Function` type
 4. Fighting type inference
 5. Copy-pasting type definitions
 6. Not using discriminated unions
 7. Inheritance over composition
-8. Not using \`never\` for exhaustive checks
+8. Not using `never` for exhaustive checks
 9. Throwing errors everywhere
 10. Not using const assertions
 
@@ -282,7 +282,7 @@ Claude Code will categorize findings into four severity levels:
 
 When you ask Claude Code to review your code, you'll receive structured, actionable feedback:
 
-\`\`\`markdown
+```markdown
 ## TypeScript Backend Code Review
 
 ### Summary
@@ -294,7 +294,7 @@ Reviewing Express authentication middleware for security and type safety.
    - Problem: Using string concatenation for database query
    - Risk: Attacker could expose all user data
    - Fix: Use parameterized queries
-   - Code: \`db.query('SELECT * FROM users WHERE username = $1', [username])\`
+   - Code: `db.query('SELECT * FROM users WHERE username = $1', [username])`
    - Reference: OWASP A03:2021 - Injection
 
 2. **Missing Rate Limiting** - auth.routes.ts:15
@@ -329,7 +329,7 @@ Reviewing Express authentication middleware for security and type safety.
 1. [URGENT] Fix SQL injection in auth.controller.ts
 2. [HIGH] Add rate limiting to /api/auth/* endpoints
 3. [MEDIUM] Optimize user service queries
-\`\`\`
+```
 
 ### What Makes This Different
 
@@ -393,8 +393,8 @@ This skill is designed for use with Claude Code and follows best practices from 
 ## Contributing
 
 To improve this skill:
-1. Add new examples to the \`examples/\` directory
-2. Update checklists in \`references/\` with latest security/performance patterns
+1. Add new examples to the `examples/` directory
+2. Update checklists in `references/` with latest security/performance patterns
 3. Keep framework-specific guides current with latest versions
 4. Add new compliance standards as needed
 
