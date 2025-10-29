@@ -62,20 +62,23 @@ A comprehensive skill for reviewing TypeScript backend applications with a focus
 
 ```
 typescript-backend-expert/
-├── SKILL.md                           # Main skill instructions
-├── README.md                          # This file
-├── references/                        # Reference materials
-│   ├── security-checklist.md          # OWASP Top 10 & security patterns
-│   ├── performance-checklist.md       # Performance optimization guide
-│   ├── compliance-checklist.md        # GDPR, SOC 2, HIPAA, PCI DSS
-│   ├── type-safety-checklist.md       # TypeScript best practices
-│   ├── typescript-anti-patterns.md    # Common anti-patterns to avoid
-│   ├── advanced-typescript-patterns.md # Modern TypeScript patterns
-│   ├── express-best-practices.md      # Express-specific patterns
-│   └── fastify-best-practices.md      # Fastify-specific patterns
-└── examples/                          # Code examples
-    ├── security-examples.md           # Good vs bad security patterns (10 patterns)
-    └── performance-examples.md        # Good vs bad performance patterns (11 patterns)
+├── SKILL.md                                # Main skill instructions
+├── README.md                               # This file
+├── references/                             # Reference materials
+│   ├── security-checklist.md               # OWASP Top 10 & security patterns
+│   ├── performance-checklist.md            # Performance optimization guide
+│   ├── compliance-checklist.md             # GDPR, SOC 2, HIPAA, PCI DSS
+│   ├── type-safety-checklist.md            # TypeScript best practices
+│   ├── modern-javascript-essentials.md     # ES6+ features & patterns
+│   ├── typescript-anti-patterns.md         # Common anti-patterns to avoid
+│   ├── advanced-typescript-patterns.md     # Modern TypeScript patterns
+│   ├── typescript-type-system-fundamentals.md # Type system deep dive
+│   ├── nodejs-architecture-patterns.md     # Layered architecture & jobs
+│   ├── express-best-practices.md           # Express-specific patterns
+│   └── fastify-best-practices.md           # Fastify-specific patterns
+└── examples/                               # Code examples
+    ├── security-examples.md                # Good vs bad security patterns (10 patterns)
+    └── performance-examples.md             # Good vs bad performance patterns (11 patterns)
 ```
 
 
@@ -400,14 +403,38 @@ To improve this skill:
 
 ## Version
 
-**Version**: 1.1.0  
-**Last Updated**: 2025  
-**TypeScript**: 5.x  
-**Express**: 4.x  
-**Fastify**: 4.x  
+**Version**: 1.2.0
+**Last Updated**: 2025
+**TypeScript**: 5.x
+**Express**: 4.x
+**Fastify**: 4.x
 **OWASP Top 10**: 2021 Edition
 
 ### Changelog
+
+#### v1.2.0 (2025)
+- **NEW**: TypeScript Type System Fundamentals reference
+  - Generics deep dive (constraints, inference, defaults)
+  - Conditional types with `infer`
+  - Mapped types and key remapping
+  - Template literal types for type-safe routing
+  - Deep recursive utilities
+  - Type-safe API client patterns
+- **NEW**: Node.js Architecture Patterns reference
+  - Layered architecture (controllers, services, repositories)
+  - Database transaction handling patterns
+  - Background job processing (Bull/BullMQ)
+  - Real-time patterns (Socket.io/WebSockets)
+  - Application bootstrap and graceful shutdown
+- **NEW**: Modern JavaScript Essentials reference
+  - ES6+ features (arrow functions, destructuring, spread/rest)
+  - Template literals and tagged templates
+  - Enhanced object literals
+  - Async/await patterns (sequential vs parallel)
+  - Functional array methods
+  - Optional chaining and nullish coalescing
+- Enhanced architecture checklist with modern patterns
+- Improved code organization guidance
 
 #### v1.1.0 (2025)
 - Added TypeScript anti-patterns reference (10 common mistakes)

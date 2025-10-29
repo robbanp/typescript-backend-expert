@@ -76,6 +76,7 @@ For each code review, systematically check:
 - [ ] Proper async/await typing
 - [ ] Avoid anti-patterns (Reference: `/references/typescript-anti-patterns.md`)
 - [ ] Use modern patterns (Reference: `/references/advanced-typescript-patterns.md`)
+- [ ] Leverage type system fundamentals (Reference: `/references/typescript-type-system-fundamentals.md`)
 
 #### Performance (Reference: `/references/performance-checklist.md`)
 - [ ] Efficient database queries
@@ -89,6 +90,14 @@ For each code review, systematically check:
 #### Framework-Specific Best Practices
 - [ ] Express: Middleware ordering, error handling (Reference: `/references/express-best-practices.md`)
 - [ ] Fastify: Schema validation, plugin architecture (Reference: `/references/fastify-best-practices.md`)
+
+#### Architecture & Organization (Reference: `/references/nodejs-architecture-patterns.md`)
+- [ ] Layered architecture (controllers, services, repositories)
+- [ ] Proper dependency injection
+- [ ] Transaction handling patterns
+- [ ] Background job processing (Bull/BullMQ)
+- [ ] Real-time patterns (WebSocket/Socket.io)
+- [ ] Application bootstrap and graceful shutdown
 
 #### Compliance & Logging (Reference: `/references/compliance-checklist.md`)
 - [ ] Audit logging for sensitive operations
@@ -250,6 +259,26 @@ Reference the `/examples/` directory for:
 ## TypeScript Best Practices
 
 Always check for TypeScript best practices and anti-patterns:
+
+### Modern JavaScript Foundations (Reference: `/references/modern-javascript-essentials.md`)
+Before diving into TypeScript specifics, ensure proper use of modern JavaScript features:
+1. Arrow functions with lexical `this` binding
+2. Destructuring for cleaner code
+3. Spread/rest operators for immutability
+4. Template literals for string building
+5. Enhanced object literals
+6. Async/await patterns (sequential vs parallel)
+7. Functional array methods (map, filter, reduce)
+8. Optional chaining (?.) and nullish coalescing (??)
+
+### Type System Fundamentals (Reference: `/references/typescript-type-system-fundamentals.md`)
+1. Generics - constraints, inference, defaults, multiple type parameters
+2. Conditional types - type logic, `infer`, distributive conditionals
+3. Mapped types - custom transformations, key remapping, filtering
+4. Template literal types - type-safe routing, API endpoints, event names
+5. Built-in utility types - Partial, Required, Pick, Omit, Record, etc.
+6. Deep recursive utilities - DeepReadonly, DeepPartial, path types
+7. Type-safe API clients - full type safety across HTTP calls
 
 ### Modern TypeScript Patterns (Reference: `/references/advanced-typescript-patterns.md`)
 1. Schema-first development with Zod
